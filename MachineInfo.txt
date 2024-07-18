@@ -1,0 +1,63 @@
+-Prerequisite for code :
+
+1) To get the macaddress of a machine first of all we need to create a type of variable = System.Net.NetworkInformation.NetworkInterface
+ ex : 
+      Variable name = Variable1
+      Variabletype = System.Net.NetworkInformation.NetworkInterface
+
+2) Import System.Net 
+
+3) Import System.Net.NetworkInformation
+
+
+------
+Code:
+------
+
+
+
+' Get all network interfaces
+
+Dim interfaces As System.Net.NetworkInformation.NetworkInterface() = System.Net.NetworkInformation.NetworkInterface.GetAllNetworkInterfaces()
+
+' Iterate through each interface
+For Each networkInterface As System.Net.NetworkInformation.NetworkInterface In interfaces
+    ' Check if the interface is connected
+    If networkInterface.OperationalStatus = System.Net.NetworkInformation.OperationalStatus.Up AndAlso networkInterface.GetPhysicalAddress().ToString() <> String.Empty Then
+        ' Get the MAC address of the connected interface
+        Dim macAddressString As System.Net.NetworkInformation.PhysicalAddress = networkInterface.GetPhysicalAddress()
+			 macAddress = BitConverter.ToString(macAddressString.GetAddressBytes())
+        MachineName = "adapter "+networkInterface.Name
+		 		 
+        ' Output the MAC address
+       ' Console.WriteLine("Connected Interface: " & MachineName)
+		'Console.WriteLine("MAC Address: " & macAddress)
+  macAddress= macAddress.Replace("-",":")
+    End If
+	
+	
+'Get IP Address 
+	  If networkInterface.Supports(NetworkInterfaceComponent.IPv4) Then
+  			If networkInterface.GetIPv4Statistics().BytesSent.ToString()<>"0" Then
+      
+                ' Print IPv4 addresses
+                For Each address As UnicastIPAddressInformation In networkInterface.GetIPProperties().UnicastAddresses
+                    If address.Address.AddressFamily = Net.Sockets.AddressFamily.InterNetwork Then
+						 IPAddress = address.Address.ToString
+                        'Console.WriteLine(" IP Address: " & address.Address.ToString())
+	              End If
+                Next
+            End If
+		End If
+Next
+
+
+'Get host name
+hostName = Environment.MachineName
+'Console.WriteLine("Host Name: " & hostName)
+
+
+
+
+
+

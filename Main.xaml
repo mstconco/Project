@@ -1,0 +1,253 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1103.2,3184.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Database</x:String>
+      <x:String>UiPath.Database.Activities</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="657.6,3120" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence For Exception" sap:VirtualizedContainerService.HintSize="595.2,3031.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="ErrorMsg" />
+        <Variable x:TypeArguments="x:String" Name="ErrorCount" />
+        <Variable x:TypeArguments="x:String" Name="ErrorinfoExceptionMSG" />
+        <Variable x:TypeArguments="x:String" Name="ErrorCountValue" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:Comment sap:VirtualizedContainerService.HintSize="532.8,223.2" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//Required Information For Send Email Invoke Code:&#xA;&#xA;-Must be set your project name in mail subject line.&#xA;&#xA;-Set Smtp host,smtp port,from email,exception email and email password." />
+      <ui:Comment sap:VirtualizedContainerService.HintSize="532.8,166.4" sap2010:WorkflowViewState.IdRef="Comment_2" Text="* If you use connect to database activity then follow below steps&#xA;&#xA;-Must Be Set Your Database Connection Variable&#xA;&#xA;" />
+      <ui:Comment sap:VirtualizedContainerService.HintSize="532.8,145.6" sap2010:WorkflowViewState.IdRef="Comment_3" Text="-Must be create new sheet in your project config file.&#xD;&#xA;&#xD;&#xA;Sheet Name = Sheet2&#xA;" />
+      <ui:ReadCell Cell="B1" DisplayName="Read Exception Message From Cell" sap:VirtualizedContainerService.HintSize="532.8,120" sap2010:WorkflowViewState.IdRef="ReadCell_1" SheetName="Sheet2" WorkbookPath="Configfile.xlsx">
+        <ui:ReadCell.Result>
+          <OutArgument x:TypeArguments="x:String">[ErrorMsg]</OutArgument>
+        </ui:ReadCell.Result>
+      </ui:ReadCell>
+      <ui:ReadCell Cell="B2" DisplayName="Read Count From Cell" sap:VirtualizedContainerService.HintSize="532.8,120" sap2010:WorkflowViewState.IdRef="ReadCell_2" SheetName="Sheet2" WorkbookPath="Configfile.xlsx">
+        <ui:ReadCell.Result>
+          <OutArgument x:TypeArguments="x:String">[ErrorCount]</OutArgument>
+        </ui:ReadCell.Result>
+      </ui:ReadCell>
+      <Assign DisplayName="Store Error into ErrorinfoExceptionMSG" sap:VirtualizedContainerService.HintSize="532.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[ErrorinfoExceptionMSG]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[errorInfo.Exception.Message.ToString.Replace(Environment.NewLine,"").Trim]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:InvokeCode ContinueOnError="{x:Null}" Code="If ErrorMsg = ExceptionMsg Then  'Check If ErrorMsg matches ExceptionMsg&#xA;  ' Check if ErrorMsg equals ExceptionMsg&#xA; &#xA;  If ErrorCount = &quot;4&quot; Then&#xA;  ' If ErrorCount is &quot;4&quot;, reset ErrorCountValue to &quot;0&quot;&#xA; &#xA;  ErrorCountValue = &quot;0&quot;&#xA;  Else&#xA; &#xA;   ' If ErrorCount is not &quot;4&quot;, increment ErrorCountValue by 1&#xA;   ErrorCountValue = (CInt(ErrorCount)+1).ToString&#xA;   &#xA; End If&#xA; Else&#xA; ' If ErrorMsg does not equal ExceptionMsg, set ErrorCountValue to &quot;1&quot;&#xA; ErrorCountValue = &quot;1&quot;&#xA;End If&#xA;&#xA;&#xA;" DisplayName="Code For Value Count" sap:VirtualizedContainerService.HintSize="532.8,196.8" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+        <ui:InvokeCode.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="ErrorMsg">[ErrorMsg]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ErrorCount">[ErrorCount]</InArgument>
+          <InOutArgument x:TypeArguments="x:String" x:Key="ErrorCountValue">[ErrorCountValue]</InOutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="ExceptionMsg">[ErrorinfoExceptionMSG]</InArgument>
+        </ui:InvokeCode.Arguments>
+      </ui:InvokeCode>
+      <If Condition="[ErrorCountValue=&quot;0&quot;]" sap:VirtualizedContainerService.HintSize="532.8,1833.6" sap2010:WorkflowViewState.IdRef="If_1">
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,688" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="MailBody" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:WriteCell Cell="B1" DisplayName="Write Null Exception Message In Cell" sap:VirtualizedContainerService.HintSize="433.6,148" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet2" WorkbookPath="Configfile.xlsx">
+              <ui:WriteCell.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:WriteCell.Text>
+            </ui:WriteCell>
+            <ui:WriteCell Cell="B2" DisplayName="Write Count In Cell" sap:VirtualizedContainerService.HintSize="433.6,148" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet2" Text="[ErrorCountValue]" WorkbookPath="Configfile.xlsx" />
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,115.2" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[MailBody]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;html&gt;
+&lt;body&gt;
+Hi, &lt;br/&gt;
+We have found same error 5 times while running the bot. Please check manually.&lt;br/&gt;
+&lt;p&gt;Exception Message : "+ ErrorinfoExceptionMSG+"&lt;/p&gt;&lt;br/&gt;
+Regards,&lt;br/&gt;
+RPA - OUTAMATION.
+&lt;/body&gt;
+&lt;/html&gt;"]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Using  client As New SmtpClient()&#xD;&#xA;&#xD;&#xA;client.Host = arHost&#xD;&#xA;client.Port = arPort&#xD;&#xA;client.Credentials = New Net.NetworkCredential(arFromEmail,arAccountPwd)&#xD;&#xA;'client.UseDefaultCredentials=True&#xD;&#xA;client.EnableSsl=True&#xD;&#xA;&#xD;&#xA;Dim message As New MailMessage()&#xD;&#xA;message.From = New MailAddress(arFromEmail)&#xD;&#xA;message.To.Add(arToEmail.Trim())&#xD;&#xA;&#xD;&#xA;'Dim attch As New System.Net.Mail.Attachment(arAttachmentPath)&#xD;&#xA;'Dim attch1 As New System.Net.Mail.Attachment(arAttachmentPath1)&#xD;&#xA;&#xD;&#xA;'message.Attachments.Add(attch)&#xD;&#xA;&#xD;&#xA;'message.Attachments.Add(attch1)&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;message.Subject=arSubject&#xD;&#xA;message.IsBodyHtml=True&#xD;&#xA;&#xD;&#xA;message.Body=arBody&#xD;&#xA;&#xD;&#xA;client.Send(message)&#xD;&#xA;Console.WriteLine(&quot;Email Sent&quot;)&#xD;&#xA;&#xD;&#xA;End Using" DisplayName="Sent Email" sap:VirtualizedContainerService.HintSize="433.6,188" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+              <ui:InvokeCode.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="arHost" />
+                <InArgument x:TypeArguments="x:Int32" x:Key="arPort" />
+                <InArgument x:TypeArguments="x:String" x:Key="arSubject">
+                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Prod | Exception | Project Name | &quot;+Now.Date.ToShortDateString.Replace(&quot;/&quot;,&quot;&quot;)" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="arFromEmail" />
+                <InArgument x:TypeArguments="x:String" x:Key="arAccountPwd" />
+                <InArgument x:TypeArguments="x:String" x:Key="arToEmail" />
+                <InArgument x:TypeArguments="x:String" x:Key="arBody">
+                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="MailBody" />
+                </InArgument>
+              </ui:InvokeCode.Arguments>
+            </ui:InvokeCode>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="499.2,984" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:WriteCell Cell="B1" DisplayName="Write Exceptioin Message In Cell" sap:VirtualizedContainerService.HintSize="436.8,148" sap2010:WorkflowViewState.IdRef="WriteCell_3" SheetName="Sheet2" Text="[ErrorinfoExceptionMSG]" WorkbookPath="Configfile.xlsx" />
+            <ui:WriteCell Cell="B2" DisplayName="Write Error Count In Cell" sap:VirtualizedContainerService.HintSize="436.8,148" sap2010:WorkflowViewState.IdRef="WriteCell_4" SheetName="Sheet2" Text="[ErrorCountValue]" WorkbookPath="Configfile.xlsx" />
+            <Assign DisplayName="Store Null In ErrorCountValue" sap:VirtualizedContainerService.HintSize="436.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[ErrorCountValue]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:DatabaseDisconnect DatabaseConnection="{x:Null}" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="436.8,56.8" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1" />
+            <TryCatch DisplayName="Handle Main Flow " sap:VirtualizedContainerService.HintSize="436.8,428.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Main - Invoke Workflow File (Main.xaml)" sap:VirtualizedContainerService.HintSize="334.4,174.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Main.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1" Reason="[exception.Message.ToString]" />
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+  </Sequence>
+</Activity>
